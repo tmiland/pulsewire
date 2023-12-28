@@ -56,12 +56,9 @@ usage() {
   # shellcheck disable=SC2046
   printf "Usage: %s %s [options]\\n" "${CYAN}" $(basename "$0")
   echo
-  echo "  If called without arguments, uses 24 hour clock."
-  echo
-  printf "  --PulseAudio       use PulseAudio\\n"
-  printf "  --PipeWire         use PipeWire\\n"
+  printf "  --PulseAudio   |-pa    use PulseAudio\\n"
+  printf "  --PipeWire     |-pw    use PipeWire\\n"
   printf "\\n"
-  printf "  Crontab: @hourly bash ~/.scripts/night_light.sh > /dev/null 2>&1\\n"
   echo
 }
 
